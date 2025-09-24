@@ -1,0 +1,28 @@
+
+#animated {
+    background-color: #1c1c1c; /* Slightly lighter dark card */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    text-align: left;
+}
+
+#animated h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#animated h3 {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+#animated p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}

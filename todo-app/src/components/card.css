@@ -1,0 +1,8 @@
+#btn {
+    padding: 15px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    background-color: rgb(117, 71, 159);
+    display: flex;
+
+}

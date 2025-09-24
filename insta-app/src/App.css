@@ -1,0 +1,27 @@
+html, body, #root {
+  min-height: 100%;
+  height: auto;
+  overflow-y: auto; /* allow scrolling */
+}
+
+
+.container {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: visible;   /* make sure it doesn’t clip */
+}
+
+
+.container img {
+  width: 100%;         
+  height: auto;        
+  /* object-fit: contain; show full image */
+  display: block;      /* removes inline gaps */
+  max-height: max-content;   /* prevent overflow beyond viewport */
+}
+

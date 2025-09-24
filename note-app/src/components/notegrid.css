@@ -1,0 +1,24 @@
+/* .note-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+  position: relative;
+  max-width: 400px; /* or your desired max width */
+  /* margin: 0 auto;   center horizontally */
+/* } */
+/* .note-card {
+  flex: 1 1 180px;   /* flex-grow 1, flex-shrink 1, base width 180px */
+  /* min-width: 180px;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif; */
+/* } */  
+
