@@ -1,0 +1,88 @@
+.App {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.10);
+  background: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1.5px solid #aaa;
+  border-radius: 5px;
+  width: 280px;
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+button {
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: none;
+  background: #b90019;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+button:hover {
+  background: #e74749;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 36px auto 0 auto;
+  max-width: 450px; /* Container max width */
+  text-align: left;
+  margin-top: 32px;
+}
+
+li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Checkbox left, text center, button right */
+  width: 100%;
+  /* You can add padding if needed */
+}
+
+input[type="checkbox"] {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Task text styling */
+li span {
+  flex: 1;
+  min-width: 230px; /* Maintain consistent width */
+  margin: 0 18px;
+  text-align: center; /* Center the text inside li */
+}
+
+/* Delete button styling */
+li button {
+  margin-left: 16px;
+}
+
+/* Completed task styles */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.completed-button {
+  text-decoration: line-through;
+}
