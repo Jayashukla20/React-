@@ -1,0 +1,98 @@
+div {
+  max-width: 550px;
+  margin: 40px auto;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  /* overflow: hidden; */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Header/Navbar */
+div h1 {
+  background: #fa9d9d;
+  color: black;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px ;
+  margin: 0;
+  padding: 15px;
+  font-size: 20px;
+}
+
+div h4 {
+  background: #e48383;
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: 10px 15px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/* Overall form container */
+form {
+  background: white;              /* White background */
+  padding: 30px;
+  max-width: 550px;
+  margin: 40px auto;              /* Center the form */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Labels should be block elements (1 below each other) */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs (text, email, password, number) */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: grey;                     /* Input text color grey */
+  font-size: 14px;
+}
+
+/* Placeholder style */
+input::placeholder {
+  color: #444;                     /* Dark grey/black-ish */
+  opacity: 0.7;
+}
+
+/* Radio & checkbox alignment */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+
+/* Error messages */
+p {
+  margin: 4px 0 10px 0;
+  font-size: 13px;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
