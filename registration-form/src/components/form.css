@@ -3,7 +3,6 @@ div {
   margin: 40px auto;
   border-radius: 10px;
   margin-bottom: 0px;
-  /* overflow: hidden; */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -24,17 +23,19 @@ div h4 {
   color: black;
   text-align: center;
   margin: 0;
-  padding: 10px 15px;
+  padding: 15px 15px;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 17px;
+  margin-bottom: 4px; 
 }
+
 
 /* Overall form container */
 form {
-  background: white;              /* White background */
-  padding: 30px;
+  background: white;
+  padding: 16px 30px 30px 30px;  
   max-width: 550px;
-  margin: 40px auto;              /* Center the form */
+  margin: 40px auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   font-family: Arial, sans-serif;
@@ -43,7 +44,7 @@ form {
 /* Labels should be block elements (1 below each other) */
 label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 3px;   
   font-weight: bold;
   color: #333;
 }
@@ -54,18 +55,13 @@ input[type="email"],
 input[type="password"],
 input[type="number"] {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
+  padding: 12px;
+  /* margin: 0; */
+  /* margin-bottom: 8px;    */
   border: 1px solid #ccc;
   border-radius: 6px;
-  color: grey;                     /* Input text color grey */
+  color: grey;
   font-size: 14px;
-}
-
-/* Placeholder style */
-input::placeholder {
-  color: #444;                     /* Dark grey/black-ish */
-  opacity: 0.7;
 }
 
 /* Radio & checkbox alignment */
@@ -77,7 +73,7 @@ input[type="checkbox"] {
 
 /* Error messages */
 p {
-  margin: 4px 0 10px 0;
+  margin: 4px 4px 10px 4px;
   font-size: 13px;
 }
 

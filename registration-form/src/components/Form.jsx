@@ -1,6 +1,6 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './form.css'
+
 const Form = () => {
     const [formData, setFormData] = useState({
         username: "",
@@ -11,29 +11,22 @@ const Form = () => {
         gender: "",
         termsAccepted: false
     })
-
-
     const [errors, setErrors] = useState({})
-
     const [successMessage, setSucessMessage] = useState("")
-
 
     function handleChange(event) {
         const { name, type, value, checked } = event.target;
-
-        // check if input is a checkbox
         setFormData(prevData => ({
-            ...prevData,                 // keep other fields unchanged
+            ...prevData,
             [name]: type === "checkbox" ? checked : value
         }));
     }
 
     function handleSubmit(event) {
-        event.preventDefault();  // stop page refresh
-
-        const newErrors = validateForm(formData); // run validation rules
+        event.preventDefault();
+        const newErrors = validateForm(formData);
         if (Object.keys(newErrors).length > 0) {
-            setErrors(newErrors); // show errors
+            setErrors(newErrors);
         } else {
             alert("Registration successful ✅");
             console.log(formData);
@@ -46,13 +39,13 @@ const Form = () => {
                 age: "",
                 gender: "",
                 termsAccepted: false
-            }); // reset
+            });
             setErrors({});
         }
     }
+
     function validateForm(data) {
         let errors = {};
-
         if (!data.username) errors.username = "Username is required";
         if (!data.email.includes("@")) errors.email = "Invalid email";
         if (data.password.length < 6) errors.password = "Password must be at least 6 characters";
@@ -60,17 +53,15 @@ const Form = () => {
         if (!data.age || data.age < 18) errors.age = "Must be 18 or older";
         if (!data.gender) errors.gender = "Please select a gender";
         if (!data.termsAccepted) errors.termsAccepted = "You must accept the terms";
-
         return errors;
     }
-
 
     return (
         <div>
             <h1>Registration Form in React</h1>
             <h4>Please fill in the details below to create your account</h4>
             <form onSubmit={handleSubmit}>
-                <div>
+                <div className="form-group">
                     <label>Username:</label>
                     <input
                         type="text"
@@ -80,9 +71,7 @@ const Form = () => {
                     />
                     {errors.username && <p style={{ color: "red" }}>{errors.username}</p>}
                 </div>
-
-                {/* Repeat same structure for Email, Password, Confirm Password, Age */}
-                <div>
+                <div className="form-group">
                     <label>Email:</label>
                     <input
                         type="email"
@@ -92,46 +81,44 @@ const Form = () => {
                     />
                     {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
                 </div>
-                <div>
+                <div className="form-group">
                     <label>Password:</label>
                     <input
-                        type="text"
+                        type="password"
                         name="password"
                         value={formData.password}
                         onChange={handleChange}
                     />
                     {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}
                 </div>
-                <div>
+                <div className="form-group">
                     <label>Confirm Password:</label>
                     <input
-                        type="text"
+                        type="password"
                         name="confirmPassword"
                         value={formData.confirmPassword}
                         onChange={handleChange}
                     />
                     {errors.confirmPassword && <p style={{ color: "red" }}>{errors.confirmPassword}</p>}
                 </div>
-                <div>
+                <div className="form-group">
                     <label>Age:</label>
                     <input
-                        type="text"
+                        type="number"
                         name="age"
                         value={formData.age}
                         onChange={handleChange}
                     />
                     {errors.age && <p style={{ color: "red" }}>{errors.age}</p>}
                 </div>
-
-                <div>
+                <div className="form-group">
                     <label>Gender:</label>
                     <input type="radio" name="gender" value="Male" checked={formData.gender === "Male"} onChange={handleChange} /> Male
                     <input type="radio" name="gender" value="Female" checked={formData.gender === "Female"} onChange={handleChange} /> Female
                     <input type="radio" name="gender" value="Other" checked={formData.gender === "Other"} onChange={handleChange} /> Other
                     {errors.gender && <p style={{ color: "red" }}>{errors.gender}</p>}
                 </div>
-
-                <div>
+                <div className="form-group">
                     <label>
                         <input
                             type="checkbox"
@@ -142,13 +129,10 @@ const Form = () => {
                     </label>
                     {errors.termsAccepted && <p style={{ color: "red" }}>{errors.termsAccepted}</p>}
                 </div>
-
                 <button type="submit">Register</button>
-
                 {successMessage && <p style={{ color: "green" }}>{successMessage}</p>}
             </form>
         </div>
-
     )
 }
 
