@@ -1,0 +1,102 @@
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+}
+
+h1, h3 {
+    color: #26333b;
+    font-weight: bold;
+}
+
+.input-section {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid #d0d9e3;
+    padding: 11px 16px;
+    flex: 1;
+}
+
+.add, .analyze, .clear {
+    padding: 12px 22px;
+    font-size: 17px;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add { background: #2086ed; color: #fff; }
+.analyze { background: #19be5d; color: #fff; }
+.clear { background: #e25241; color: #fff; }
+
+.grades-list, .analysis, .sorted-grades, .count {
+    background: #f5fbfd;
+    margin-bottom: 15px;
+    border-radius: 13px;
+    padding: 18px 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.grades-list ul, .sorted-grades ul, .count ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.student-label {
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 44px;
+    text-align: center;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50%;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.badge-red    { background-color: #e25241; } /* 10, 20, 30 */
+.badge-orange { background-color: #faa61a; } /* 40, 50 */
+.badge-blue   { background-color: #2086ed; } /* 60, 70 */
+.badge-green  { background-color: #19be5d; } /* 80, 90, 100 */
+
+.analysis p {
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #d9dadc;
+    font-size: 18px;
+}
+.analysis h3, .sorted-grades h3, .count h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 22px;
+    color: #56a4d5;
+}
+.divider {
+    margin-top: 15px;
+    font-size: 18px;
+    background-color: rgb(110, 170, 199);
+
+}
+.sorted-grades ul li, .count ul li {
+    margin: 6px 0;
+}
+.statistics {
+    margin-top: 15px;
+    font-size: 18px;
+}
