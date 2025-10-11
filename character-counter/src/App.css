@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #0e0e1a 0%, #291c3a 30%, #3a0ca3 60%, #b983ff 85%, #70e0d3 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Rubik Glitch', sans-serif;
+
+    /* white text for contrast */
+
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f0f0f0; */
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+div textarea{
+    width: 450px;
+    height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
