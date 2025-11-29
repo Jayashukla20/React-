@@ -1,0 +1,62 @@
+.user-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(24,32,51,0.06);
+  padding: 34px 24px 28px 24px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 14px;
+  transition: box-shadow 0.2s;
+}
+
+.user-card:hover {
+  box-shadow: 0 8px 40px rgba(24,32,51,0.12);
+}
+
+.user-icon {
+  color: #5a5d61;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 1.38rem;
+  margin-bottom: 8px;
+  color: #1c1c1c;
+  font-weight: 600;
+}
+
+.role-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4e5869;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.view-btn {
+  background: #f5f7fa;
+  color: #283041;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 600;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.view-btn:hover {
+  background: #e6ecf4;
+}
+
+.arrow-icon {
+  stroke: #283041;
+}
