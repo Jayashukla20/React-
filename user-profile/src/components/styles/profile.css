@@ -1,0 +1,60 @@
+/* profile.css */
+
+
+
+h1 {
+    margin: 8px 0;
+    font-size: 1.6rem;
+    color: #2c3e50;
+}
+
+.bio {
+    font-size: .95rem;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+}
+
+.info-group {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .95rem;
+    color: #444;
+}
+
+.profile-container {
+    background: #fff;
+    max-width: 360px;
+    width: 100%;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 12px 28px #00000014;
+    text-align: center;
+    animation: fadeIn .4s ease-out;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: #ececec;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.back-btn {
+    margin-top: 24px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: background-color .2s ease;
+    width: max-content;
+}
